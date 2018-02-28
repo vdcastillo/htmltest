@@ -1,0 +1,56 @@
+header {
+  text-align: center;
+  height: 100vh;  
+background: linear-gradient(to right, #69bcf4, #30cc8b);
+  color: #fff;
+  overflow:hidden;
+transform: skewY(-3deg);
+transform-origin: 0;
+}
+
+header .content {transform: skewY(3deg);
+transform-origin: 0;
+height: 90%;
+
+}
+
+header span .svg-inline--fa {font-size: 3em;}
+
+header span.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 5px;
+  border-radius: 2px;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+header span::before,
+header span::after {
+  position: absolute;
+  top: -23px;
+  content:"";
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+}
+
+/*header span::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  transform:         rotate(-45deg);
+}
+
+header span::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform:         rotate(45deg);
+}*/
