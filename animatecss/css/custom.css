@@ -4,14 +4,44 @@ header {
 background: linear-gradient(to right, #69bcf4, #30cc8b);
   color: #fff;
   overflow:hidden;
-transform: skewY(-3deg);
-transform-origin: 0;
+/*transform: skewY(-3deg);
+transform-origin: 0;*/
 }
 
-header .content {transform: skewY(3deg);
-transform-origin: 0;
-height: 90%;
+header:before, header:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 10%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
 
+header:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+          padding-bottom: 10%;
+
+}
+
+
+/*header::after {
+  -webkit-transform: skewY(3deg);
+  -moz-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  -o-transform: skewY(3deg);
+  transform: skewY(3deg);
+   transform-origin: 100%;
+}*/
+
+header .content {
+height: 100%;
 }
 
 header span .svg-inline--fa {font-size: 3em;}
@@ -57,3 +87,5 @@ header span::after {
 
 
 div.animated span {font-size: 4em; text-align: center; color:#6da3f9;}
+
+.mt-10 {margin-top:3em;}
