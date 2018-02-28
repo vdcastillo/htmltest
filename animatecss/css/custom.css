@@ -54,3 +54,6 @@ header span::after {
   -o-transform:      rotate(45deg);
   transform:         rotate(45deg);
 }*/
+
+
+div.animated span {font-size: 4em; text-align: center; color:#6da3f9;}
