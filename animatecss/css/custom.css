@@ -85,6 +85,23 @@ header span::after {
   transform:         rotate(45deg);
 }*/
 
+.scroll-animations {
+ text-align: center;
+}
+
+.scroll-animations div {
+/*  flex-grow: 1;*/
+  padding: 30px;
+  text-align: center;
+  opacity: 0;
+  color: #333;
+}
+
+.scroll-animations  h3 {
+  font-size: 1.9em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
 
 div.animated span {font-size: 4em; text-align: center; color:#6da3f9;}
 
