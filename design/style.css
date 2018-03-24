@@ -17,7 +17,7 @@ header {
 }
 
 header .container {
-
+    padding: 2em 2em 0 2em;
     transform: skewY(2deg);
     transform-origin: 0;
     height: 100%;
@@ -32,6 +32,7 @@ header span.animated {
     right: 0;
     left: 0;
     bottom: 5px;
+    animation-delay: 1s;
     border-radius: 2px;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
@@ -52,6 +53,8 @@ header span::after {
 
 .title {
     color: white;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
     /*font-family: Arial;*/
     /*padding-top: 5%;*/
     /*position: absolute;*/
